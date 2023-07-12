@@ -37,103 +37,103 @@
             />
     </RelativeLayout>
 
-
     <RelativeLayout
         android:id="@+id/greyGap"
         android:layout_width="match_parent"
         android:layout_height="15dp"
         android:layout_below="@+id/topicContainer"
-        android:background="#dcdcdc"
+        android:background="#EFEFEF"
         android:visibility="gone"
         />
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </RelativeLayout>
-    <TextView
-        android:id="@+id/questionQ"
-        android:layout_width="wrap_content"
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="Q"
-        android:textColor="#101011"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@+id/topicContainer"
-        />
-
-    <TextView
-        android:id="@+id/questionnumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/questionQ"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/roboto_medium"
-        android:hint="1"
-        android:textColor="#101011"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@+id/topicContainer"
-        />
-    <TextView
-        android:id="@+id/question."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/questionnumber"
-        android:layout_marginStart="0.5dp"
-        android:layout_marginTop="20dp"
-
-        android:text="."
-        android:textColor="#101011"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@+id/topicContainer"
-        android:fontFamily="@font/roboto_medium"
-        />
-    <ImageView
-        android:id="@+id/imagequestion"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:layout_above="@+id/optionContainer"
-        android:visibility="gone"
-        android:layout_below="@+id/topicContainer"
-        />
-    <TextView
-        android:id="@+id/question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="20dp"
-        android:hint="8,_____"
-        android:fontFamily="@font/roboto_medium"
-        android:textColor="#101011"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_toRightOf="@+id/questionnumber"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_toLeftOf="@+id/imagequestion"
-        android:layout_below="@+id/topicContainer"
-        />
+        android:background="@color/white"
+        android:layout_below="@+id/greyGap"
+        >
+        <TextView
+            android:id="@+id/questionQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Q"
+            android:textColor="#101011"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/questionnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/questionQ"
+            android:background="@color/white"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="1"
+            android:textColor="#101011"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/question."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/questionnumber"
+            android:layout_marginStart="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:text="."
+            android:textColor="#101011"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/roboto_medium"
+            />
+        <ImageView
+            android:id="@+id/imagequestion"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_above="@+id/optionContainer"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:hint="8,_____"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="#101011"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/questionnumber"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_toLeftOf="@+id/imagequestion"
+            />
         <RelativeLayout
             android:id="@+id/optionContainer"
             android:layout_width="match_parent"
             android:layout_height= "wrap_content"
             android:layout_below="@+id/questionQ"
             android:padding="20dp"
+            android:background="@color/white"
             >
             <RelativeLayout
                 android:id="@+id/answertextcontainer"
@@ -293,9 +293,6 @@
                 android:background="@drawable/default_option_background"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-
-
-
                 >
 
                 <TextView
@@ -332,7 +329,6 @@
 
 
         </RelativeLayout>
-
         <RelativeLayout
             android:id="@+id/button_mainContainer"
             android:layout_width="match_parent"
@@ -360,4 +356,4 @@
 
     </RelativeLayout>
 
-
+</RelativeLayout>
