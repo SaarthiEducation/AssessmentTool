@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/backbutton"
             android:layout_marginTop="24dp"
-            android:background="@drawable/rectanglecontainer"
+            android:background="#EFEFEF"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="32dp"
             android:layout_marginBottom="100dp"

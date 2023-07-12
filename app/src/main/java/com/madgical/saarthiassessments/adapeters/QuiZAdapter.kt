@@ -1,6 +1,6 @@
 package com.madgical.saarthiassessments.adapeters
 
-import android.graphics.Typeface
+
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.LayoutInflater
@@ -144,7 +144,7 @@ class QuizAdapter(
 
     inner class QuizViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val topicContainer: RelativeLayout = itemView.findViewById(R.id.topicContainer)
-        private val gapAfterTopic: RelativeLayout = itemView.findViewById(R.id.greyGap)
+       private val gapAfterTopic: RelativeLayout = itemView.findViewById(R.id.greyGap)
         private val topicText: TextView = itemView.findViewById(R.id.topictext)
         private val topic: TextView = itemView.findViewById(R.id.topic)
         private val questionNumberTextView: TextView =
