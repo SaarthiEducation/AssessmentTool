@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreen">
+
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.madgical.saarthiassessments.view.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_testScreen"
+            app:destination="@id/testScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/testScreen"
+        android:name="com.madgical.saarthiassessments.view.TestScreen"
+        android:label="fragment_test_screen"
+        tools:layout="@layout/fragment_test_screen" >
+        <action
+            android:id="@+id/action_testScreen_to_scoreScreen"
+            app:destination="@id/scoreScreen" />
+        <action
+            android:id="@+id/action_testScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+        <action
+            android:id="@+id/action_testScreen_self"
+            app:destination="@id/testScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreScreen"
+        android:name="com.madgical.saarthiassessments.view.ScoreScreen"
+        android:label="fragment_score_screen"
+        tools:layout="@layout/fragment_score_screen" >
+        <action
+            android:id="@+id/action_scoreScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+        <action
+            android:id="@+id/action_scoreScreen_to_testScreen"
+            app:destination="@id/testScreen" />
+    </fragment>
+</navigation>

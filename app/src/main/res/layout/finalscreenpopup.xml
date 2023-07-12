@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="43dp"
+    >
+    <TextView
+        android:id="@+id/finalleveltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are in the Level: "
+        android:layout_marginTop="43dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="50dp"
+        android:layout_centerHorizontal="true"
+        />
+  <TextView
+      android:id="@+id/finallevelNumber"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:hint="8"
+      android:textSize="25sp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      android:layout_toRightOf="@+id/finalleveltext"
+      android:layout_marginTop="43dp"
+      android:layout_marginStart="5dp"
+      />
+
+</RelativeLayout>

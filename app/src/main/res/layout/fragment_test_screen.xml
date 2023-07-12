@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.TestScreen">
+    <RelativeLayout
+        android:id="@+id/logoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/logo_saarthi"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logoContainer"
+        android:background="@drawable/container">
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/backbutton"
+            android:layout_marginTop="22dp"
+
+            />
+        <TextView
+            android:id="@+id/answer_the_following_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/backbutton"
+            android:text="Answer the following questions"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/second_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backbutton"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rectanglecontainer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="100dp"
+            android:paddingBottom="15dp"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/quiz_item"
+
+                />
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ScoreScreen">
+
+    <RelativeLayout
+        android:id="@+id/logoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="97dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/logo_saarthi" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logoContainer"
+        android:background="@drawable/container">
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/backbutton"
+            android:layout_marginTop="22dp"
+
+            />
+        <RelativeLayout
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectanglecontainer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="61dp">
+
+            <RelativeLayout
+                android:id="@+id/scoreBoard"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white" >
+                <TextView
+                    android:id="@+id/scoreboardText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp"
+                    android:text="Score Board"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#101011"
+                    />
+            </RelativeLayout>
+
+            <!-- Table for displaying scores -->
+            <TableLayout
+                android:id="@+id/scoreTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scoreBoard"
+                android:layout_marginTop="15dp">
+
+                <!-- Table Header -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_border"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+
+                    >
+                    <TextView
+                        android:id="@+id/levelHeader"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/row_border"
+                        android:text="Level"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="#101011" />
+
+                    <TextView
+                        android:id="@+id/correctAnswersHeader"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/row_border"
+                        android:layout_weight="1"
+                        android:text="Correct Answers"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="#101011"/>
+
+                    <TextView
+                        android:id="@+id/totalQuestionsHeader"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/row_border"
+                        android:layout_weight="1"
+                        android:text="Total Questions"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="#101011" />
+                </TableRow>
+                <TableLayout
+                    android:id="@+id/scoreTableLayoutvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/scoreBoard"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    >
+
+
+                </TableLayout>
+                <Button
+                    android:id="@+id/button_goback"
+                    android:layout_width="335dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/startbutton"
+                    android:layout_marginTop="17dp"
+                    android:text="GO BACK"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    />
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
