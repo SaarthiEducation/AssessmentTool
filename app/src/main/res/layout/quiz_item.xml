@@ -333,8 +333,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/optionContainer"
-            android:background="#dcdcdc"
-            android:visibility="gone"
+            android:background="#EFEFEF"
+            android:visibility="visible"
 
             >
             <Button
@@ -344,8 +344,8 @@
                 android:background="@drawable/submit_button"
                 android:layout_centerHorizontal="true"
                 android:textFontWeight="600"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+
 
                 />
 
